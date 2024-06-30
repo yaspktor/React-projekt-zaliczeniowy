@@ -37,13 +37,17 @@ Aby uruchomić serwer, użyj polecenia:
 npm run dev
 ```
 Otwórz przeglądarkę i przejdź do http://localhost:5173, aby zobaczyć działającą aplikację.
-### Komponenty
+## Komponenty
 App.jsx: Główny komponent zarządzający stanem i renderujący inne komponenty.
+
 Background.jsx: Komponent wyświetlający obraz tła w zależności od bieżącej pogody.
+
 CurrentWeather.jsx: Komponent pokazujący bieżące informacje o pogodzie.
+
 Forecast.jsx: Komponent wyświetlający prognozę pogody na kilka następnych dni.
+
 Search.jsx: Komponent umożliwiający wyszukiwanie informacji o pogodzie według lokalizacji.
 
 
-### API
+## API
 Aplikacja korzysta z API OpenWeatherMap do pobierania informacji o pogodzie. Możesz uzyskać swój klucz API [tutaj](https://home.openweathermap.org/users/sign_up).
