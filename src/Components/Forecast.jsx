@@ -1,17 +1,23 @@
 import React, {useRef} from 'react';
+import clearIcon from '../assets/sunny_icon.png';
+import cloudyIcon from '../assets/clouds.png';
+import rainIcon from '../assets/rain.png';
+import stormIcon from '../assets/storm.png';
+
+
 
 const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 const getIcon = (weather) => {
   switch (weather) {
     case 'Clear':
-      return 'src/assets/sunny_icon.png';
+      return clearIcon;
     case 'Clouds':
-      return 'src/assets/clouds.png';
+      return cloudyIcon;
     case 'Rain':
-      return 'src/assets/rain.png';
+      return rainIcon;
     case 'Thunderstorm':
-      return 'src/assets/storm.png';
+      return stormIcon;
     default:
       return './assets/default_icon.jpg';
   }
