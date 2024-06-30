@@ -3,6 +3,7 @@ import clearIcon from '../assets/sunny_icon.png';
 import cloudyIcon from '../assets/clouds.png';
 import rainIcon from '../assets/rain.png';
 import stormIcon from '../assets/storm.png';
+import snowIcon from '../assets/snow.png';
 
 
 
@@ -18,6 +19,9 @@ const getIcon = (weather) => {
       return rainIcon;
     case 'Thunderstorm':
       return stormIcon;
+    case 'Snow': 
+      return snowIcon;
+
     default:
       return './assets/default_icon.jpg';
   }

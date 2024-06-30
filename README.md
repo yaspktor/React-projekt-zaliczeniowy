@@ -53,3 +53,9 @@ Search.jsx: Komponent umożliwiający wyszukiwanie informacji o pogodzie według
 
 ## API
 Aplikacja korzysta z API OpenWeatherMap do pobierania informacji o pogodzie. Możesz uzyskać swój klucz API [tutaj](https://home.openweathermap.org/users/sign_up).
+
+## Technologie
+- React
+- Vite
+- vitest do testowania
+- fetch do pobierania danych z API
