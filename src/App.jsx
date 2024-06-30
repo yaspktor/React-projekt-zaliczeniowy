@@ -4,18 +4,12 @@ import Search from './Components/Search';
 import CurrentWeather from './Components/CurrentWeather';
 
 
-
-
-
-
 function App() {
   const [data, setData] = useState({});
   const [forecast, setForecast] = useState(null);
   const [location, setLocation] = useState('');
 
-
   const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
-  console.log(apiKey);
 
   const searchLocation = (event) => {
     if (event.key === 'Enter') {
@@ -27,7 +21,6 @@ function App() {
           return response.json();
         })
         .then((data) => {
-          console.log('Weather data:', data);
           setData(data);
           getForecast(data.coord.lat, data.coord.lon);
         })
@@ -47,7 +40,6 @@ function App() {
         return response.json();
       })
       .then((data) => {
-        console.log('Forecast data:', data);
         setForecast(data);
       })
       .catch((error) => {
