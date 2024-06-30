@@ -21,19 +21,21 @@ function App() {
   const searchLocation = (event) => {
     if (event.key === 'Enter') {
       axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`).then((response) => {
+        console.log('Weather data:', response.data); // Dodaj to
         setData(response.data);
         getForecast(response.data.coord.lat, response.data.coord.lon);
       });
       setLocation('');
     }
   };
-
+  
   const getForecast = (lat, lon) => {
     axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`).then((response) => {
+      console.log('Forecast data:', response.data); // Dodaj to
       setForecast(response.data);
     });
   };
-
+  
   return (
     <div className="app">
       <Background weather={data.weather ? data.weather[0].main : ''} />
