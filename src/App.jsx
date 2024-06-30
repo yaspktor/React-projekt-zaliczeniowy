@@ -14,8 +14,9 @@ function App() {
   const [forecast, setForecast] = useState(null);
   const [location, setLocation] = useState('');
 
-  
+
   const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
+  console.log(apiKey);
 
   const searchLocation = (event) => {
     if (event.key === 'Enter') {
