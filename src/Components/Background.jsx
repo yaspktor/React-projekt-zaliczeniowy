@@ -1,23 +1,30 @@
 import React from 'react';
+import defaultBackground from '../assets/sunset.jpg';
+import clearBackground from '../assets/sunny.jpg';
+import cloudyBackground from '../assets/cloudy_less.jpg';
+import rainyBackground from '../assets/rainy.jpg';
+import stormyBackground from '../assets/stormy.jpg';
+
+
 
 function Background({ weather }) {
   let backgroundImage = '';
 
   switch (weather) {
     case 'Clear':
-      backgroundImage = './src/assets/sunny.jpg';
+      backgroundImage = clearBackground;
       break;
     case 'Clouds':
-      backgroundImage = './src/assets/cloudy_less.jpg';
+      backgroundImage = cloudyBackground;
       break;
     case 'Rain':
-      backgroundImage = './src/assets/rainy.jpg';
+      backgroundImage = rainyBackground;
       break;
     case 'Thunderstorm':
-      backgroundImage = './src/assets/stormy.jpg';
+      backgroundImage = stormyBackground;
       break;
     default:
-      backgroundImage = './src/assets/sunset.jpg';
+      backgroundImage = defaultBackground;
       break;
   }
 
