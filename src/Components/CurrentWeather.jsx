@@ -30,8 +30,6 @@ function CurrentWeather({ data, forecast }) {
           <p>Wind Speed</p>
         </div>
       </div>
-
-      {/* Add Forecast component here */}
       {forecast && <Forecast forecast={forecast} />}
     </div>
   );
