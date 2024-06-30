@@ -2,6 +2,8 @@
 
 Ten projekt to aplikacja pogodowa zbudowana przy użyciu Vite i React. Umożliwia użytkownikom wyszukiwanie bieżącej pogody i prognoz dla różnych lokalizacji.
 
+Live demo: [Aplikacja Pogodowa](https://yaspktor.github.io/React-projekt-zaliczeniowy/)
+
 ## Instalacja
 
 Postępuj zgodnie z poniższymi krokami, aby skonfigurować i uruchomić projekt lokalnie.
