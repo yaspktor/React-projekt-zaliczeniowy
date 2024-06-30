@@ -38,6 +38,14 @@ Aby uruchomić serwer, użyj polecenia:
 ```sh
 npm run dev
 ```
+
+## Testy
+Aby uruchomić testy, użyj polecenia:
+
+```sh
+npm test
+```
+
 Otwórz przeglądarkę i przejdź do http://localhost:5173, aby zobaczyć działającą aplikację.
 ## Komponenty
 App.jsx: Główny komponent zarządzający stanem i renderujący inne komponenty.
